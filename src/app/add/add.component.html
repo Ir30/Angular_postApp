@@ -10,33 +10,33 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">User Id</label>
-                    <input type="text" class="form-control">
+                    <input name="userId" [(ngModel)]="userId" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Id</label>
-                    <input type="text" class="form-control">
+                    <input name="id" [(ngModel)]="id" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
 
                 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                     <label for="" class="labe-control">Body</label>
-                    <textarea name="" id="" cols="30" rows="8" class="form-control"></textarea>
+                    <textarea name="body" [(ngModel)]="body" id="" cols="30" rows="8" class="form-control"></textarea>
                 
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-4">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
                 </div>
 
 
