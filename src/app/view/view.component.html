@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<div class="container pt-3 m-5">
+    <div class="row m-5">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-1">
+
+                <h1 class="text-secondary">View Post</h1>
+                <hr>
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 g-1" *ngFor="let i of data">
+                    <p>User Id:{{i.userId}}, Id:{{i.id}}</p>
+                    
+                    <h3 m-2>{{i.title}}</h3>
+                    <p>{{i.body}}</p>
+                    <hr>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
