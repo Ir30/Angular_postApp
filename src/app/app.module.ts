@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewComponent } from './view/view.component';
 import { NavComponent } from './nav/nav.component';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http'
 const myroute:Routes=[
   {
     path:"",
@@ -30,7 +30,8 @@ const myroute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myroute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
